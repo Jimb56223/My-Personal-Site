@@ -40,8 +40,46 @@
         </h3>
 
         <!-- Tabs section for main01 -->
-        <div id="main01-tabs">
-
+        <div class="main01-tab">
+            <button class="tablinks" onclick="openTab(event, 'Tools')" id="defaultOpen">Tools</button>
+            <button class="tablinks" onclick="openTab(event, 'Languages')">Languages</button>
+        </div>
+        
+        <!-- Tab content -->
+        <div id="Tools" class="tabcontent">
+            
+            <!-- Tools Table -->
+            <div id="tools-container">
+                <!-- Info heading -->
+                <h4>
+                    Coding environments that I am thus far familiar with
+                </h4>
+                <!-- Images grid -->
+                <div class="codingImg" id="tools-imgGrid">
+                    <img src="">
+                    <img src="">
+                    <img src="">
+                </div>
+            </div>
+        </div>
+        
+        <div id="Languages" class="tabcontent">
+            
+            <!-- Language Table -->
+            <div id="lang-container">
+                <!-- Info heading -->
+                <h4>
+                    Current Languages that I am thus far familiar with
+                </h4>
+                <!-- Images grid -->
+                <div class="codingImg" id="lang-imgGrid">
+                    <img src="">
+                    <img src="">
+                    <img src="">
+                    <img src="">
+                    <img src="">
+                </div>
+            </div>
         </div>
     </div>
 
@@ -86,5 +124,32 @@
         </div>
     </div>
 
+
+    <script>
+        function openTab(evt, tabName) {
+  // Declare all variables
+    var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+    }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+    </script>
 </body>
 </html>
