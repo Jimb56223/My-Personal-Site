@@ -1,19 +1,90 @@
+html,body{
+    width: 100%;
+}
+
+/* HEADER////////////////////////////////// */
+
+/* Style of the entire header as a container */
+header{
+    width: 100%;
+    margin: auto;
+}
+
+.topHeader{
+    display: flex;
+    flex-direction: row;
+    padding: 2em;
+    margin: auto;
+    width: 100%;
+}
+
+.logo > a > img{
+    display: block;
+    width: 15em;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    height: 10px;
+    align-self:flex-start;
+    margin-top: 4%;
+    margin-left: 30%;
+}
+
+.links > a{
+    text-decoration: none;
+    margin: 0.5em;
+    padding: 1em;
+}
+
+.bottomHeader{
+    margin: auto;
+    padding: 1em;
+    text-align: center;
+}
+
+.bottomHeader > h3{
+    font-size: 2.5em;
+    font-weight: 460;
+}
+
+
+
+/* MAIN01////////////////////////////////// */
+
+/* Style of the entire main01 as a container */
+.main01{
+    color: white;
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    background-image: url("images/illustration-4564730_1920.jpg");
+    background-size: cover;
+}
+
+#main01-intro{
+    padding: 2em;
+    font-size: 2em;
+    text-align: right;
+}
+
 /* Style the tab */
 .main01-tab {
     overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
 }
 
   /* Style the buttons that are used to open the tab content */
 .main01-tab button {
+    color: white;
     background-color: inherit;
-    float: left;
+    /* ! ALIGN BUTTONS HERE */
     border: none;
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
+    font-size: 2em;
 }
 
   /* Change background color of buttons on hover */
@@ -42,4 +113,62 @@
 @keyframes fadeEffect {
     from {opacity: 0;}
     to {opacity: 1;}
+}
+
+
+
+/* SELF////////////////////////////////// */
+
+/* Style of the entire self as a container */
+.self{
+    width: 100%;
+    margin: auto;
+}
+
+#yinyangPic > img{
+    width: 100px;
+}
+
+
+
+/* MAIN02////////////////////////////////// */
+
+/* Style of the entire main02 as a container */
+.main02{
+    display: flex;
+    flex-flow: column;
+    color: white;
+    width: 100%;
+    margin: auto;
+    height: 500px;
+    background-image: url("images/astronaut-1388582_1920.jpg");
+    background-size: cover;
+}
+
+/* Puctures of the sites that ive made before */
+#myWebBlock-img >a > img{
+    width: 6em;
+}
+
+/* More Pages as a whole */
+.morePages{
+    display: flex;
+    flex-flow: column;
+}
+
+/* More Pages info */
+.morePages > p{
+    text-align: center;
+}
+
+/* More pages Button */
+.morePages > a{
+    color: white;
+    text-decoration: none;
+    background-color: rgb(74, 73, 73);
+    padding: 1em;
+    border-radius: 3em;
+    margin: 1em auto;
+    width: 80%;
+    text-align: center;
 }
