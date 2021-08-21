@@ -92,7 +92,9 @@ header{
     margin: auto;
     padding-top: 90px;
     background-image: url("images/illustration-4564730_1920.jpg");
-    background-size: cover;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
     padding-bottom: 4em;
 }
 
@@ -117,6 +119,7 @@ header{
 #main01-intro-h5{
     padding: 41px;
     padding-top: 0.1em;
+    padding-bottom: 6em;
     text-align: left;
 }
 
@@ -251,6 +254,8 @@ header{
     margin: auto;
     background-image: url("images/astronaut-1388582_1920.jpg");
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 /* Puctures of the sites that ive made before */
