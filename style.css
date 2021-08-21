@@ -24,14 +24,15 @@ header{
 }
 
 .topHeader{
-    position: fixed;
+    position: absolute;
     display: flex;
     flex-wrap: wrap;
     align-content: space-around;
     padding: 2em;
+    padding-right: 0;
     margin: 0;
     height: 12%;
-    width: 100%;
+    width: 97%;
     /* background-color: #463f3f; */
 }
 
@@ -39,9 +40,10 @@ header{
     margin: auto;
 }
 
-
 .logo > a > img{
     width: 6em;
+    padding-right: 0;
+    margin-right: 0;
 }
 
 .links{
@@ -58,7 +60,7 @@ header{
     text-decoration: none;
     margin: 0.5em;
     padding: 1em;
-    /* color: white; */
+    color: white;
 }
 
 
@@ -85,18 +87,37 @@ header{
 
 /* Style of the entire main01 as a container */
 .main01{
-    color: white;
+    color: rgb(252, 252, 252);
     width: 100%;
     margin: auto;
+    padding-top: 90px;
     background-image: url("images/illustration-4564730_1920.jpg");
     background-size: cover;
     padding-bottom: 4em;
 }
 
-#main01-intro{
-    padding: 2em;
+
+
+#main01-intro-h1{
+    padding: 41px;
+    padding-bottom: 0;
+    margin-bottom: 0%;
+    text-align: left;
+    font-size: 4em;
+}
+
+#main01-intro-h3{
+    padding: 41px;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
     font-size: 2em;
-    text-align: right;
+    text-align: left;
+}
+
+#main01-intro-h5{
+    padding: 41px;
+    padding-top: 0.1em;
+    text-align: left;
 }
 
 /* Style the tab */
@@ -118,16 +139,19 @@ header{
     padding: 14px 16px;
     transition: 0.3s;
     font-size: 2em;
+    padding: 0.5em;
 }
 
   /* Change background color of buttons on hover */
 .main01-tab button:hover {
-    background-color: #ddd;
+    background-color: rgba(221, 221, 221, 0.318);
+    border-radius: 3em;
 }
 
   /* Create an active/current tablink class */
 .main01-tab button.active {
-    background-color: #ccc;
+    background-color: rgba(204, 204, 204, 0.359);
+    border-radius: 3em;
 }
 
   /* Style the tab content */
@@ -157,6 +181,11 @@ header{
 }
 
 #tools-container > h4{
+    text-align: center;
+    padding: 4em;
+}
+
+#lang-container > h4{
     text-align: center;
     padding: 4em;
 }
@@ -250,4 +279,15 @@ header{
     margin: 1em auto;
     width: 80%;
     text-align: center;
+}
+
+#myWebBlock-img{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    margin: 4em 0;
+}
+
+#myWebBlock-img > a >  img{
+    width: 20em;
 }
