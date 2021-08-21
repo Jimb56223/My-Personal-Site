@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
 html{
     width: 100%;
     height: 100%;
@@ -41,9 +43,13 @@ header{
 }
 
 .logo > a > img{
-    width: 6em;
+    width: 7em;
     padding-right: 0;
     margin-right: 0;
+}
+
+.logo > a > img:hover{
+    width: 7.5em;
 }
 
 .links{
@@ -61,6 +67,11 @@ header{
     margin: 0.5em;
     padding: 1em;
     color: white;
+}
+
+.links > a:hover{
+    color: brown;
+    font-size: larger;
 }
 
 
@@ -81,13 +92,17 @@ header{
     font-weight: 460;
 }
 
+.makeRed{
+    color: brown;
+    font-style: italic;
+}
 
 
 /* MAIN01////////////////////////////////// */
 
 /* Style of the entire main01 as a container */
 .main01{
-    color: rgb(252, 252, 252);
+    color: rgb(128, 112, 112);
     width: 100%;
     margin: auto;
     padding-top: 90px;
@@ -106,6 +121,7 @@ header{
     margin-bottom: 0%;
     text-align: left;
     font-size: 4em;
+    font-family: 'Major Mono Display', monospace;
 }
 
 #main01-intro-h3{
@@ -114,6 +130,7 @@ header{
     padding-bottom: 0.1em;
     font-size: 2em;
     text-align: left;
+    font-family: 'Major Mono Display', monospace;
 }
 
 #main01-intro-h5{
@@ -121,6 +138,9 @@ header{
     padding-top: 0.1em;
     padding-bottom: 6em;
     text-align: left;
+    font-family: 'Major Mono Display', monospace;
+    font-size: 1em;
+    max-width: 400px;
 }
 
 /* Style the tab */
@@ -147,6 +167,7 @@ header{
 
   /* Change background color of buttons on hover */
 .main01-tab button:hover {
+    color: brown;
     background-color: rgba(221, 221, 221, 0.318);
     border-radius: 3em;
 }
@@ -223,10 +244,20 @@ header{
 
 /* Style of the entire self as a container */
 .self{
-    width: 100%;
-    margin: auto;
+    color: black;
+    width: 80%;
+    align-self: center;
+    margin: 4em;
     display: flex;
     flex-flow: row;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba(156, 179, 163, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 2em;
+    /* ! SORT OUT THE RIGHT MARGIN */
 }
 
 .self > div{
@@ -238,7 +269,7 @@ header{
 }
 
 #yinyangPic > img{
-    width: 48vw;
+    width: 35vw;
 }
 
 
@@ -252,6 +283,7 @@ header{
     color: white;
     width: 100%;
     margin: auto;
+    margin-right: 0;
     background-image: url("images/astronaut-1388582_1920.jpg");
     background-size: cover;
     background-position: center;
@@ -259,8 +291,8 @@ header{
 }
 
 /* Puctures of the sites that ive made before */
-#myWebBlock-img >a > img{
-    width: 6em;
+.main02 > #myWebBlock-img >a > img{
+    width: 90%;
 }
 
 /* More Pages as a whole */
