@@ -403,8 +403,20 @@ header {
         margin: auto;
         width: 20%;
         height: 100vh;
+        animation: fadeEffectMenu .5s; /* Fading effect takes 1 second */
     }
     
+
+    @keyframes fadeEffectMenu {
+        from {
+            height: 100px;
+            opacity: 0;
+        }
+        to {
+            height: 100vh;
+            opacity: 1;
+        }
+    }
 
 
 
