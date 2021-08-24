@@ -144,6 +144,7 @@ header {
     text-align: left;
     font-size: 4em;
     font-family: 'Major Mono Display', monospace;
+    text-shadow: 1px 2px 12px rgba(19, 1, 1, 0.687);
 }
 
 #main01-intro-h3{
@@ -153,6 +154,7 @@ header {
     font-size: 2em;
     text-align: left;
     font-family: 'Major Mono Display', monospace;
+    text-shadow: 1px 2px 12px rgba(19, 1, 1, 0.687);
 }
 
 #main01-intro-h5{
@@ -163,6 +165,7 @@ header {
     font-family: 'Major Mono Display', monospace;
     font-size: 1em;
     max-width: 400px;
+    text-shadow: 1px 2px 12px rgba(19, 1, 1, 0.687);
 }
 
 /* Style the tab */
