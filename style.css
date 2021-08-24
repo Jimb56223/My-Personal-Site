@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
 
 ::-webkit-scrollbar{
-    width: 15px;
+    width: 9px;
     height: 9px;
     }
     ::-webkit-scrollbar-thumb{
