@@ -50,7 +50,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     align-content: space-around;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding: 2em;
     padding-right: 0;
     margin: 0;
@@ -68,7 +68,7 @@ header {
 } */
 
 .logo > a > img{
-    width: 14em;
+    width: 9em;
     padding-right: 0;
     margin-right: 0;
 }
@@ -79,10 +79,11 @@ header {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
-    align-self:flex-start;
+    justify-content: space-around;
+    align-content: space-around;
     height: 10px;
     margin-top: 4%;
+    text-align: center;
 }
 
 .links > a{
@@ -90,7 +91,10 @@ header {
     margin: 0.5em;
     padding: 1em;
     color: white;
+    text-align: center;
+    margin-top: 3em;
 }
+
 
 .links > a:hover{
     color: brown;
@@ -102,6 +106,7 @@ header {
     height: 6.5em;
     width: 100%;
 }
+
 
 
 .bottomHeader{
@@ -128,7 +133,7 @@ header {
     color: rgb(128, 112, 112);
     width: 100%;
     margin: auto;
-    padding-top: 90px;
+    padding-top: 6em;
     background-image: url("images/illustration-4564730_1920.jpg");
     background-size:cover;
     background-position: center;
@@ -309,7 +314,7 @@ header {
     width: 100%;
     margin: auto;
     margin-right: 0;
-    background-image: url("images/astronaut-1388582_1920.jpg");
+    background-image: url('images/astronaut-1388582_1920.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -331,18 +336,24 @@ header {
 /* More Pages info */
 .morePages > p{
     text-align: center;
+    color: black;
+    font-size: 1.3em;
 }
 
 /* More pages Button */
 .morePages > a{
     color: white;
     text-decoration: none;
-    background-color: rgb(74, 73, 73);
+    border-radius: 28px;
+    background: #4a4a4a;
     padding: 1em;
-    border-radius: 3em;
-    margin: 1em auto;
+    margin: 3em auto;
     width: 80%;
     text-align: center;
+}
+
+.morePages > a:hover{
+    animation: buttonmove 0.6s ease-in-out 1 forwards ;
 }
 
 #myWebBlock-img{
@@ -375,6 +386,11 @@ header {
         right: 0%;
     }
 
+    .logo > a > img{
+        width: 8em;
+        padding-left: 0;
+    }
+
     .dropbtn {
         background-color: #18a21d;
         color: white;
@@ -399,8 +415,11 @@ header {
         position: absolute;
         background-color: #137b16;
         min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
+        border-radius: 0 1em ;
+        background: #137b16;
+        box-shadow:  9px 9px 26px #031604c9,
+        -9px -9px 26px #189c1c;
     }
     
     .dropdown-content a {
@@ -410,7 +429,6 @@ header {
         display: flex;
         padding: 1em;
         text-align: center;
-
     }
 
     .dropdown-content > .links{
@@ -420,7 +438,7 @@ header {
     .dropdown:hover .dropdown-content {
         display: inline-block;
         left: 0;
-        padding: 1.3em;
+        padding: 1.3em 0.3em;
         margin: auto;
         width: 20%;
         height: 100vh;
