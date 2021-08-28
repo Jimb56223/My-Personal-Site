@@ -4,13 +4,16 @@
     width: 5px;
     height: 1px;
     }
+
     ::-webkit-scrollbar-thumb{
     background: linear-gradient(150deg, #D13C17 8%,#E08B24 28%,#D1E028 47%,#37D65F 77%);
     border-radius: 5em;
     }
+
     ::-webkit-scrollbar-thumb:hover{
     background: linear-gradient(150deg, #46E346 18%,#057A0B 77%);
     }
+    
     ::-webkit-scrollbar-track{
     background: #f0f0f0e0;
     border-radius: 0px;
@@ -28,6 +31,7 @@ body{
 
     /* ! stops the extra white from being shown */
     overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 hr{
@@ -63,9 +67,6 @@ header {
     margin: auto;
 }
 
-/* .dropbtn{
-    display: none;
-} */
 
 .logo > a > img{
     width: 9em;
@@ -102,13 +103,6 @@ header {
 }
 
 
-#spacer{
-    height: 6.5em;
-    width: 100%;
-}
-
-
-
 .bottomHeader{
     margin: auto;
     padding: 1em;
@@ -126,6 +120,10 @@ header {
 }
 
 
+
+
+
+
 /* MAIN01////////////////////////////////// */
 
 /* Style of the entire main01 as a container */
@@ -140,8 +138,6 @@ header {
     background-attachment: fixed;
     padding-bottom: 4em;
 }
-
-
 
 #main01-intro-h1{
     padding: 41px;
@@ -186,7 +182,6 @@ header {
 .main01-tab button {
     color: white;
     background-color: inherit;
-    /* ! ALIGN BUTTONS HERE */
     border: none;
     outline: none;
     cursor: pointer;
@@ -288,7 +283,6 @@ header {
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     padding: 3em;
-    /* ! SORT OUT THE RIGHT MARGIN */
 }
 
 .self > div{
@@ -321,7 +315,6 @@ header {
 }
 
 /* Puctures of the sites that ive made before */
-
 .main02 > #myWebBlock-img >a > img{
     width: 90%;
     border-radius: 1em;
@@ -352,9 +345,6 @@ header {
     text-align: center;
 }
 
-.morePages > a:hover{
-    animation: buttonmove 0.6s ease-in-out 1 forwards ;
-}
 
 #myWebBlock-img{
     display: flex;
@@ -371,7 +361,7 @@ header {
 
 
 
-
+/* RESPONSIVE SIDE */
 @media screen and (min-width: 600px) {
 
     .dropbtn{
