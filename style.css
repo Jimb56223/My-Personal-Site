@@ -13,7 +13,7 @@
     ::-webkit-scrollbar-thumb:hover{
     background: linear-gradient(150deg, #46E346 18%,#057A0B 77%);
     }
-    
+
     ::-webkit-scrollbar-track{
     background: #f0f0f0e0;
     border-radius: 0px;
@@ -430,6 +430,7 @@ header {
         left: 0;
         padding: 1.3em 0.3em;
         margin: auto;
+        padding-top: 5em;
         width: 20%;
         height: 100vh;
         animation: fadeEffectMenu .5s; /* Fading effect takes 1 second */
